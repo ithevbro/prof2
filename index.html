@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+    .material-symbols-outlined {
+        font-variation-settings:
+            'FILL' 1,
+            'wght' 700,
+            'GRAD' 0,
+            'opsz' 48
+    }
+</style>
+
+<body>
+    <div id="burger">
+        <div id="burgMenu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <img id="star" src="https://freepngimg.com/thumb/logo/113669-logo-rockstar-free-png-hq.png" alt="">
+    </div>
+    <div id="main" class="container">
+        <div id="overlay"></div>
+
+        <!-- page1 -->
+
+        <div class="page">
+            <div id="headerCarousel">
+                <div class="carouselitem">
+                    <div>HELLO!</div>
+                    <h1>WELCOME TO MY PORTFOLIO</h1>
+                </div>
+                <div class="carouselitem">
+                    <div>I'M FROM LVIV</div>
+                    <h1>A STEP IT STUDENT</h1>
+                </div>
+            </div>
+            <ul id="socialsTop">
+                <li><span><a href="https://www.facebook.com/">Facebook</a></span><a href="https://www.facebook.com/"><i
+                            class="imtop bi bi-facebook"></i></a></li>
+                <li><span><a href="https://twitter.com/?lang=uk">Twitter</a></span><a
+                        href="https://twitter.com/?lang=uk"><i class="imtop bi bi-twitter"></i></a></li>
+                <li><span><a href="https://www.instagram.com/">Instagram</a></span><a
+                        href="https://www.instagram.com/"><i class="imtop bi bi-instagram"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- page2 -->
+
+        <div class="zagal">
+            <h1 class="hiddenheader">About Me</h1>
+            <div class="zagal2">
+                <div id="info">
+                    <div id="about" class="hidden">
+                        <div><img id="photo" src="./img/cj.webp" alt=""></div>
+                        <div>
+                            Student Front-End<br>Developer
+                        </div>
+                    </div>
+                    <div id="skills">
+                        <div class="imgs">
+                            <div class="hidden">My technology stack is:</div>
+                            <div>
+                                <img class="img hidden" src="./img/html.png" alt="">
+                                <img class="img hidden" src="./img/css.png" alt="">
+                                <img class="img hidden" src="./img/js.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="info2">
+                    <div id="sklad">
+                        <div class="progCont">
+                            <div>After Effects <span class="num" max="85"></span></div>
+                            <div class="progress">
+                                <div class="progFill"></div>
+                            </div>
+                        </div>
+                        <div class="progCont">
+                            <div>Photoshop <span class="num" max="90"></span></div>
+                            <div class="progress">
+                                <div class="progFill"></div>
+                            </div>
+                        </div>
+                        <div class="progCont">
+                            <div>Illustrator <span class="num" max="50"></span></div>
+                            <div class="progress">
+                                <div class="progFill"></div>
+                            </div>
+                        </div>
+                        <div class="progCont">
+                            <div>Sublime <span class="num" max="95"></span></div>
+                            <div class="progress">
+                                <div class="progFill"></div>
+                            </div>
+                        </div>
+                        <div class="progCont">
+                            <div>Sketch <span class="num" max="75"></span></div>
+                            <div class="progress">
+                                <div class="progFill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- page3 -->
+
+        <div class="page3">
+            <h1 class="hiddenheader">Checkout a few of my works</h1>
+            <div id="projects">
+                <div id="snakeCont" class="hidden">
+                    <h1>Snake GAME</h1>
+                    <div class="popup">
+                        <input type="button" class="btnp" id="btnSnake" value="View Project">
+                    </div>
+                    <div><img src="./img/ouroboros.png" alt="" class="ouroboros"></div>
+                </div>
+                <div id="convertorCont" class="hidden">
+                    <h1>Currency Converter</h1>
+                    <div class="popup">
+                        <input type="button" class="btnp" id="curencyConverter" value="View Project">
+                    </div>
+                    <div id="cash">
+                        <span id="dollar" class="material-symbols-outlined">
+                            attach_money
+                        </span>
+
+                        <span id="swap" class="material-symbols-outlined">
+                            swap_horiz
+                        </span>
+
+                        <span id="euro" class="material-symbols-outlined">
+                            euro_symbol
+                        </span>
+                    </div>
+                </div>
+                <div id="playCont" class="hidden">
+                    <h1>Audio Player</h1>
+                    <div class="popup">
+                        <input type="button" class="btnp" id="startP" value="View Project">
+                    </div>
+                    <div id="raduga"></div>
+                </div>
+            </div>
+
+            <div id="showProject">
+                <span id="cross" class="material-symbols-outlined">
+                    close
+                </span>
+                <canvas id="canvas" width="500" height="500"></canvas>
+                <div id="cc">
+                    <div class="main2">
+                        <div class="cont">
+                            <div class="left1">
+                                <table>
+                                    <thead>
+                                        <th colspan="2">Converter</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>From</td>
+                                            <td>
+                                                <select id="from"></select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>To</td>
+                                            <td>
+                                                <select id="to"></select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Date</td>
+                                            <td><input type="date" id="date"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input class="btn" id="btn1" type="button" value="Ok"></td>
+                                            <td id="output1"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="left1">
+                                <table>
+                                    <thead>
+                                        <th id="latest" colspan="2"></th>
+                                    </thead>
+                                    <tbody id="tb2"></tbody>
+                                </table>
+                                <div class="btns">
+                                    <input type="button" value="Prev" id="prev">
+                                    <div id="btncont"></div>
+                                    <input type="button" value="Next" id="next">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="cont2">
+                            <div class="right1">
+                                <table>
+                                    <thead>
+                                        <th colspan="2" id="th3">Month Rates</th>
+                                    </thead>
+                                    <tbody id="tb3">
+                                        <tr>
+                                            <td>Base</td>
+                                            <td>
+                                                <select id="from2"></select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Currency</td>
+                                            <td>
+                                                <select id="to2"></select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Month</td>
+                                            <td><input type="month" id="date2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="v"><input class="btn" id="btn2" type="button" value="Ok"></td>
+                                            <td id="output2"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="player3">
+                    <audio id="audio" src="./traks/Vivaldi.mp3"></audio>
+                    <div id="main3" class="dark">
+                        <div id="cc2">
+                            <canvas id="canvas2" width="220"></canvas>
+                        </div>
+                        <div id="songName">Vivaldi - Winter</div>
+                        <div id="trackL">
+                            <div class="time">
+                                <div id="playerCurrent"></div>
+                                <div id="playerDuration"></div>
+                            </div>
+                            <input type="range" id="trackLInput" value="0">
+                        </div>
+                        <div class="buttons">
+                            <button id="prev"><i class="bi bi-rewind-fill"></i></button>
+                            <button id="play"><i class="bi bi-play-fill"></i></button>
+                            <button id="next"><i class="bi bi-fast-forward-fill"></i></button>
+                        </div>
+                        <button id="loop"><i class="bi bi-repeat"></i></button>
+                        <div id="sound">
+                            <input type="range" value="1" min="0" max="1" step="0.1" id="volumeRange">
+                            <button id="volume"><i class="bi bi-volume-up-fill"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- page4 -->
+
+        <div class="page4">
+            <h1 class="hiddenheader">My clients</h1>
+            <div id="brands" class="hiddenheader">
+                <div id="carouselSlider">
+                    <div class="move" id="mainmove">
+                        <div class="carouselItem"><img
+                                src="https://preview.colorlib.com/theme/unfold/images/logo-paypal.png.webp" alt="">
+                        </div>
+                        <div class="carouselItem"><img
+                                src="https://preview.colorlib.com/theme/unfold/images/logo-adobe.png.webp" alt=""></div>
+                        <div class="carouselItem"><img
+                                src="https://preview.colorlib.com/theme/unfold/images/logo-google.png.webp" alt="">
+                        </div>
+                        <div class="carouselItem"><img
+                                src="https://preview.colorlib.com/theme/unfold/images/logo-puma.png.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- page5 -->
+
+        <div class="page5">
+            <h1 class="hiddenheader">Contacts</h1>
+            <div class="last">
+                <div class="hidden">
+                    <form>
+                        <div class="fln">
+                            <input type="text" placeholder="Firstname">
+                            <input type="text" placeholder="Lastname">
+                        </div>
+                        <div><input type="email" placeholder="Email address"></div>
+                        <div><textarea placeholder="Write your message" id="" cols="30" rows="5"></textarea></div>
+                        <div><button class="btnlast">Send Message</button></div>
+                    </form>
+                </div>
+                <div id="map"></div>
+            </div>
+
+            <div class="foot">
+                <ul id="socialsBot">
+                    <li><a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/?lang=uk"><i class="bi bi-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+                <p>Copyright ©2023 All rights reserved</p>
+            </div>
+        </div>
+    </div>
+
+
+    <ul id="burgerList">
+        <li>Home</li>
+        <li>About me</li>
+        <li>My Projects</li>
+        <li>Clients</li>
+        <li>Contacts</li>
+    </ul>
+
+    <script>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
+            ({ key: "AIzaSyCwPrFHf7ocdSNu2XRorp-pKq15iHD8vzk", v: "weekly" });</script>
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>
